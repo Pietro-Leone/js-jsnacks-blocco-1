@@ -4,7 +4,7 @@ const surnameList = ["Linza", "Pazi", "Corrado", "Porrega", "Artizzu", "Gresta",
 const used = [];
 let currentSurname;
 
-for (let i = 0; used.length < nameList.length; i++) {
+for (let i = 0; i < nameList.length; i++) {
 
     // Creo due numeri random
     const randomNum1 = Math.floor(Math.random() * nameList.length) + 0;
@@ -17,6 +17,9 @@ for (let i = 0; used.length < nameList.length; i++) {
 
         // Stampo la lista degli invitati
         console.log(`${nameList[randomNum1]} ${currentSurname}`);
+    }
+    else{
+        i--;
     }
 
 }
